@@ -1,0 +1,1 @@
+import os, sys; __import__('kerberos_proxy_auth.bootstrap') and sys.modules['kerberos_proxy_auth.bootstrap'].bootstrap()
