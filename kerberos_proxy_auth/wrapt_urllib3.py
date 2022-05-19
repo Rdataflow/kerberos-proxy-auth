@@ -1,9 +1,9 @@
-# wrapper for requests to authenticate with kerberos proxy (negotiate)
+# wrapper for urllib3 to authenticate with kerberos proxy (negotiate)
 import wrapt
 from typing import (Any, Dict)
 
-@wrapt.when_imported('requests')
-def apply_patches(requests):
+@wrapt.when_imported('urllib3')
+def apply_patches(urllib3):
     
     from requests_kerberos import HTTPKerberosAuth
     from urllib3.util import parse_url
@@ -19,4 +19,4 @@ def apply_patches(requests):
                 pass
         return ProxyManager(proxy_url=proxy_url, proxy_headers=proxy_headers, **kwargs)
     
-    requests.adapters.proxy_from_url = proxy_from_url
+    urllib3.poolmanager.proxy_from_url = proxy_from_url
