@@ -4,7 +4,7 @@ from typing import (Any, Dict)
 
 @wrapt.when_imported('urllib3')
 def apply_patches(urllib3):
-    
+    import requests
     from requests_kerberos import HTTPKerberosAuth
     from urllib3.util import parse_url
     from urllib3.poolmanager import ProxyManager

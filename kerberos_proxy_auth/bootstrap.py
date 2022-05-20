@@ -22,7 +22,7 @@ def _register_bootstrap_functions():
     # will be executed after all module search path has been setup.
 
     # This will register the patches
-    from . import wrapt_requests, wrapt_urllib3
+    from . import wrapt_requests, wrapt_urllib3, wrapt_pip
     # TODO: eventually add wrapt_botocore
 
 
