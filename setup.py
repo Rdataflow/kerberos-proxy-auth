@@ -10,7 +10,7 @@ packages_path='lib/site-packages'
 
 setup(
     name='kerberos-proxy-auth',
-    version='0.0.1',
+    version='0.0.2',
     #use_scm_version=True,
     # intentionally drop scm_version to support manual download
     # and pip install /path/to/kerberos-proxy-auth-main.zip

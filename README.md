@@ -8,7 +8,7 @@ This package patches `requests` and `urllib3` at runtime to authenticate with ke
 	```Shell
 	set https_proxy=http://<NONkerberosproxy>:8080
 	set http_proxy=http://<NONkerberosproxy>:8080
-	pip install https://<path/to/this/repo>/kerberos-proxy-auth/archive/refs/heads/main.zip
+	pip install kerberos-proxy-auth
 	```
 
 ### b) from behind the kerberos proxy
