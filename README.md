@@ -50,4 +50,3 @@ After installation
 ## ToDo
 - test, feedback, contribute improvements
 - rework to support other environments (currently only: windows/system)
-- publish as python package on pypi.org

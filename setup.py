@@ -17,6 +17,7 @@ setup(
     #setup_requires=['setuptools_scm'],
     description='This package patches requests at runtime to authenticate with kerberos proxy (negotiate)',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Rdataflow',
     author_email='waldgis@bafu.admin.ch',
     license='BSD',
